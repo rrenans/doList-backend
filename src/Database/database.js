@@ -9,7 +9,8 @@ class Database {
             "mongodb://localhost:27017/doList",
             {
                 useNewUrlParser: true,
-                useFindAndModify: true
+                useFindAndModify: true,
+                useUnifiedTopology: true 
             }
         );
     }

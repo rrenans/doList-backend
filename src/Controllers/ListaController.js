@@ -11,7 +11,7 @@ class ListaController {
 
         console.log(listas);
 
-        return res.json(cervejas);
+        return res.json(listas);
     }
 
     async create(req, res) {
