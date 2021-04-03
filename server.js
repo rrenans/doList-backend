@@ -1,6 +1,6 @@
 import express from 'express';
 
-import listaController from ('./src/Controllers/listaController');
+import ListaController from ('./src/Controllers/ListaController');
 
 // esqueçemos esse import, por essa razão o banco não funfava.
 import './src/database/database'
@@ -10,8 +10,8 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get('/pegar', listaController.index);
-// app.post('/criar', listaController.create);
+app.get('/tarefas', ListaController.index);
+app.post('/novasTarefas', ListaController.create);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
