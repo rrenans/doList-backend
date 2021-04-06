@@ -1,5 +1,4 @@
-// import mongoose from 'mongoose'
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 class Database {
     constructor() {
@@ -7,13 +6,14 @@ class Database {
     }
     mongo() {
         this.mongoConnection = mongoose.connect(
-            "mongodb://localhost:27017/doList", 
+            "mongodb://localhost:27017/doList",
             {
-              useNewUrlParser: true,
-              useFindAndModify: true
+                useNewUrlParser: true,
+                useFindAndModify: true,
+                useUnifiedTopology: true 
             }
         );
     }
 }
 
-module.exports = new Database();
+export default new Database();
