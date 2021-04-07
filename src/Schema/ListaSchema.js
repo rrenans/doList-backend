@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const ListaSchema = new mongoose.Schema(
   {
     nome: { type: String },
-    decricao: { type: String },
+    descricao: { type: String },
     data: { type: String }
   },
   {

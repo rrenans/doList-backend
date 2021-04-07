@@ -1,4 +1,3 @@
-// vontando para os imports e adaptando para o projeto do professor.
 import ListaSchema from '../Schema/ListaSchema';
 
 class ListaController {
