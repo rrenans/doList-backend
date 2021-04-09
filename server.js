@@ -10,8 +10,9 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get('/tarefas', ListaController.index);
-app.post('/novastarefas', ListaController.create);
+app.get('/', ListaController.index);
+app.post('/', ListaController.create);
+
 
 app.listen(port, () => {
   console.log(`Server running in http://localhost:${port}`)
